@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { Html5QrcodeScanner } from 'html5-qrcode';
 import styles from '../styles/Home.module.css';
-import { CircularProgress, SvgIcon } from '@mui/material';
+import { CircularProgress } from '@mui/material';
 
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx8z7o85SIHOHNWHai02QaiQE-hwVTIxnPnhTX4wawwcj0d7tk0wM_xyAOhgMWb3RycPw/exec';
 
