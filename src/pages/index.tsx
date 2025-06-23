@@ -4,7 +4,7 @@ import { Html5QrcodeScanner } from 'html5-qrcode';
 import styles from '../styles/Home.module.css';
 import { CircularProgress, SvgIcon } from '@mui/material';
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyqqjyXdnNRpYDHrlcXJ_Cj5Wiowj-ArKQ9NT7Rf4a40ZVS8OG1w8ZRWd98ytIKkF3OFQ/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx8z7o85SIHOHNWHai02QaiQE-hwVTIxnPnhTX4wawwcj0d7tk0wM_xyAOhgMWb3RycPw/exec';
 
 export default function Home() {
   const [status, setStatus] = useState('WAITING');
