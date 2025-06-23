@@ -16,17 +16,6 @@
   font-family: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -161,12 +150,6 @@ a.secondary {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-}
-
 .container {
   font-family: sans-serif;
   display: flex;
@@ -178,26 +161,59 @@ a.secondary {
 .qrBox {
   width: 90%;
   max-width: 500px;
-  border: 2px solid #ccc;
-  border-radius: 0px;
+  border: 2px solid #5f5f5f !important;
+
+  img {
+    display: none;
+  }
 }
 
-.result {
-  margin-top: 20px;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 8px;
+.waiting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.registering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
+  font-size: larger;
+  font-weight: 700;
+  color: #3F5BA1;
+  text-align: center;
 }
 
 .success {
-  color: green;
-  background-color: #e6ffed;
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
+  font-size: larger;
+  font-weight: 700;
+  color: #5DA277;
+  text-align: center;
 }
 
 .error {
-  color: red;
-  background-color: #ffebee;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
+  font-size: larger;
+  font-weight: 700;
+  color: #93344A;
+  text-align: center;
 }
